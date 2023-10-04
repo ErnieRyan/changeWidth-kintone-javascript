@@ -1,0 +1,12 @@
+{
+    "app": "4225",
+    "scope": "ALL",
+    "desktop": {
+      "js": ["changeWidth.js"],
+      "css": ["51-modern-default.css"]
+    },
+    "mobile": {
+      "js": [],
+      "css": []
+    }
+}
