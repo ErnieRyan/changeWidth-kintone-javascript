@@ -14,14 +14,17 @@
     }
 
     // Set the default width for th elements to "200px"
-    thElements.forEach((th) => {
-      th.style.width = "200px";
+    thElements.forEach((th, index) => {
+      if (index !== 0) {
+        th.style.width = "200px";
+        th.style.backgroundColor = "lightgray";
+      }
     });
 
     // Create an input element for setting the width
     const widthInput = document.createElement("input");
     widthInput.type = "number";
-    widthInput.placeholder = "Enter width";
+    widthInput.placeholder = "Enter Width";
     widthInput.style.marginLeft = "20px";
     widthInput.addEventListener("input", () => {
       const newWidth = widthInput.value + "px";
