@@ -17,7 +17,10 @@
     thElements.forEach((th, index) => {
       if (index !== 0) {
         th.style.width = "200px";
-        th.style.backgroundColor = "lightgray";
+        th.style.backgroundColor = "steelblue";
+        th.style.color = "white";
+      } else {
+        th.style.width = "30px";
       }
     });
 
@@ -25,11 +28,14 @@
     const widthInput = document.createElement("input");
     widthInput.type = "number";
     widthInput.placeholder = "Enter Width";
-    widthInput.style.marginLeft = "20px";
+    widthInput.style.margin = "10px";
+    widthInput.style.padding = "0 10px";
     widthInput.addEventListener("input", () => {
       const newWidth = widthInput.value + "px";
-      thElements.forEach((th) => {
-        th.style.width = newWidth;
+      thElements.forEach((th, index) => {
+        if (index !== 0) {
+          th.style.width = newWidth;
+        }
       });
     });
 

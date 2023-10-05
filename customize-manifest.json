@@ -1,5 +1,5 @@
 {
-    "app": "4225",
+    "app": "4271",
     "scope": "ALL",
     "desktop": {
       "js": ["changeWidth.js"],
